@@ -1,0 +1,42 @@
+<mat-drawer-container class="custom_container">
+  <!-- Main content -->
+  <mat-drawer mode="side" opened="{{isSidebarOpen}}" class="sidebar">
+    <!-- Parent items -->
+    <div class="logo">
+      <img src="../../../favicon.ico" alt="Logo" />
+    </div>
+    <ul class="nav">
+      <span class="nav-title">Tec Environment</span>
+      <table class="vertical-table">
+        <tr routerLinkActive="active">
+          <button class="custom-button" mat-button color="Basic">
+            <mat-icon custom-mat-icon>build</mat-icon>Primary
+          </button>
+        </tr>
+        <tr routerLinkActive="active">
+          <button class="custom-button" mat-button color="Basic">
+            <mat-icon custom-mat-icon>build</mat-icon>Primary
+          </button>
+        </tr>
+        <tr routerLinkActive="active">
+          <button class="custom-button" mat-button color="Basic">
+            <mat-icon custom-mat-icon>build</mat-icon>Primary
+          </button>
+        </tr>
+      </table>
+    </ul>
+  </mat-drawer>
+
+  <!-- Main content area -->
+  <mat-drawer-content>
+    <div class="cont">
+      <app-navbar></app-navbar>
+      <router-outlet></router-outlet>
+      <app-plugin-page></app-plugin-page>
+    </div>
+    <!-- Floating button to open/close the sidebar -->
+    <button mat-fab class="floating-button" (click)="toggleSidebar()">
+      <mat-icon>{{ isSidebarOpen ? 'chevron_left' : 'chevron_right' }}</mat-icon>
+    </button>
+  </mat-drawer-content>
+</mat-drawer-container>

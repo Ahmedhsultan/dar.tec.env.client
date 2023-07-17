@@ -2,8 +2,9 @@
 
 :root {
     --main-color: #32DAC4;
-    --secondary-color: #03a9f4;
+    --secondary-color: #32dac452;
     --darkgray: #404040;
+    --lightgray: #66666694;
     --tableHeaderColor: hsla(204, 17%, 94%, 0.815);
 }
 
@@ -17,7 +18,7 @@
 /*forms title*/
 .title {
     font-size: 38px;
-    color: #32DAC4;
+    color: var(--main-color);
     font-weight: 600;
     letter-spacing: -1px;
     /*position: relative;*/
@@ -60,11 +61,11 @@
 }
 
 .signin a {
-    color: #32DAC4;
+    color: var(--main-color);
 }
 
 .signin a:hover {
-    text-decoration: underline #32DAC4;
+    text-decoration: underline var(--main-color);
 }
 
 

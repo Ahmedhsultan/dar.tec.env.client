@@ -1,0 +1,49 @@
+
+  .custom-toolbar {
+    border-radius: 10px; /* Adding border radius for rounded corners */
+    /* margin: 20px;  */
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-toolbar__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-toolbar__logo img {
+    width: 40px; /* Adjust the width of the logo image */
+    height: 40px; /* Adjust the height of the logo image */
+    margin-right: 10px; /* Add some margin between the logo and the text */
+  }
+
+  .custom-toolbar__profile {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .custom-toolbar__profile img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%; 
+  }
+  
+  .custom-toolbar__profile span {
+    margin-right: 10px;
+    color: var(--lightgray);
+    font-weight: bold; /* Increase font weight for a more professional look */
+    font-family: Arial, sans-serif; /* Use a standard sans-serif font */
+    font-size: 18px; /* Increase font size for a more prominent appearance */
+  }
+
+  .custom-toolbar__profile img {
+    width: 45px; /* Increase the width of the profile*/
+    height: 45px; /* Adjust the height of the profile image */
+    margin-right: 10px; /* Add some margin between the profile image and the name */
+  }
