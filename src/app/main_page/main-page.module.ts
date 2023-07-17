@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PluginListComponent } from './plugin-list/plugin-list.component';
 import { PluginPageComponent } from './plugin-page/plugin-page.component';
 import { MaterialModule } from '../materials/materials.module';
+import { DownloadDialogComponent } from './download-dialog/download-dialog.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MaterialModule } from '../materials/materials.module';
     SidebarComponent,
     NavbarComponent,
     PluginListComponent,
-    PluginPageComponent
+    PluginPageComponent,
+    DownloadDialogComponent
   ],
   imports: [
     CommonModule,

@@ -3,11 +3,14 @@
     border-radius: 10px; /* Adding border radius for rounded corners */
     /* margin: 20px;  */
     background-color: white;
+    top: 0px;
     width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     display: flex;
+    z-index: 999;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
   }
 
   .custom-toolbar__logo {
