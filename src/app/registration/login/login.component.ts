@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Input, Component, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +9,19 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  form: FormGroup = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
-  });
+  form: FormGroup = new FormGroup({});
 
-  submit() {
+  constructor(private router: Router, private formBuilder:FormBuilder){}
+  ngOnInit(): void {
+    this.form = this.formBuilder.group({
+        username:['',[Validators.required, Validators.minLength(6)]],
+        password:['',[Validators.required, Validators.minLength(6)]],
+    });
+  }
+
+  login() {
     if (this.form.valid) {
-      this.submitEM.emit(this.form.value);
+      this.router.navigate(['index']); // Replace '/' with the path of your index page
     }
   }
-  @Input() error!: string | null;
-
-  @Output() submitEM = new EventEmitter();
 }

@@ -96,12 +96,12 @@ mat-card-content {
     color: green;
 }
 
-button {
+.custombutton {
     border-radius: 30px;
-    color: #FFF;
+    color: white;
 }
 
-button:hover {
+.custombutton:hover {
     background: #FFF;
     border: 1px solid var(--main-color);
     transition: all 0.2s;

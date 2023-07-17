@@ -4,9 +4,9 @@ import { LoginComponent } from './registration/login/login.component';
 import { RegistrationComponent } from './registration/registration/registration.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
   {
     path:'index',
     loadChildren:()=>import('./main_page/main-page.module').then(m => m.MainPageModule)
