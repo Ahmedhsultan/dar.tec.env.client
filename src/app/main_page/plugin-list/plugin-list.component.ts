@@ -32,7 +32,7 @@ export class PluginListComponent {
     // Implement download functionality here
     const dialogRef = this.dialog.open(DownloadDialogComponent, {
       // width: '400px', // Set the width of the dialog as needed
-      data: { downloadLink: 'your_download_link_here' } // Replace 'your_download_link_here' with the actual download link
+      data: { downloadLink: 'your_download_link_hereyour_download_link_here' } // Replace 'your_download_link_here' with the actual download link
     });
   }
 
