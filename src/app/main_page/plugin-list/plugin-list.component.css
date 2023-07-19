@@ -29,4 +29,7 @@
     width: 100%;
     height: 315px;
   }
-  
+
+  app-rating {
+    margin-left: 5px;
+  }

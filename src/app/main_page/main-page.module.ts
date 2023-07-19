@@ -9,6 +9,7 @@ import { PluginListComponent } from './plugin-list/plugin-list.component';
 import { PluginPageComponent } from './plugin-page/plugin-page.component';
 import { MaterialModule } from '../materials/materials.module';
 import { DownloadDialogComponent } from './download-dialog/download-dialog.component';
+import { RatingComponent } from './rating/rating.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DownloadDialogComponent } from './download-dialog/download-dialog.compo
     NavbarComponent,
     PluginListComponent,
     PluginPageComponent,
-    DownloadDialogComponent
+    DownloadDialogComponent,
+    RatingComponent
   ],
   imports: [
     CommonModule,

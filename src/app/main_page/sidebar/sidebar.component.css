@@ -13,6 +13,7 @@
 .cont{
   padding: 20px;
   height: 100vh;
+  position: sticky;
 }
 
 .logo {
@@ -131,9 +132,9 @@
 
 /* Styles for the floating button */
 .floating-button {
-  position: sticky; /* Change the position to fixed */
-  left: 30px; /* Position the button on the left side */
-  top: 95%; /* Adjust the vertical position as needed */
+  position: relative; /* Change the position to fixed */
+  left: 50px; /* Position the button on the left side */
+  bottom: 50px; /* Adjust the vertical position as needed */
   width: 50px;
   height: 50px;
   transform: translateY(-50%);
@@ -153,4 +154,9 @@
   background-color: var(--secondary-color); /* Setting the background color on hover */
   transform: translateY(-50%) scale(1.1); /* Add a slight scale effect on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button-container{
+  height: 100vh;
+  position: fixed;
 }

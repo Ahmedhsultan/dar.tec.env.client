@@ -9,8 +9,19 @@ import { DownloadDialogComponent } from '../download-dialog/download-dialog.comp
   styleUrls: ['./plugin-list.component.css']
 })
 export class PluginListComponent {
+  productRating = 3;
   productName = 'Angular Introduction';
   productDescription = `Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video.
+                        Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
                         Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
                         Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
                         Learn the basics of Angular in this introduction video..\nLearn the basics of Angular in this introduction video.Learn the basics of Angular in this introduction video.
@@ -38,5 +49,11 @@ export class PluginListComponent {
 
   addToWishlist() {
     // Implement add to wishlist functionality here
+  }
+
+  onRatingChange(rating: number) {
+    // Handle the rating change here
+    // You can use this method to save the updated rating to the server or perform any other actions.
+    this.productRating = rating;
   }
 }

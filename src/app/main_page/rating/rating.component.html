@@ -1,0 +1,8 @@
+<div class="rating-container" (mouseleave)="onMouseLeave()">
+    <span *ngFor="let star of stars; let i = index" class="star" (click)="onStarClicked(i + 1)" (mouseenter)="onStarHover(i + 1)">
+      <mat-icon>{{ star }}</mat-icon>
+    </span>
+  </div>
+  <span class="rating-text">({{ rating }})</span>
+
+  

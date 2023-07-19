@@ -26,7 +26,7 @@
       </table>
     </ul>
   </mat-drawer>
-
+  
   <!-- Main content area -->
   <mat-drawer-content>
     <div class="cont">
@@ -35,7 +35,9 @@
       <router-outlet></router-outlet>
       <app-plugin-page></app-plugin-page>
       <!-- <app-plugin-list></app-plugin-list> -->
+    </div>
 
+    <div class="floating-button-container">
       <button mat-fab class="floating-button" (click)="toggleSidebar()">
         <mat-icon>{{ isSidebarOpen ? 'chevron_left' : 'chevron_right' }}</mat-icon>
       </button>
