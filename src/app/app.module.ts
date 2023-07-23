@@ -10,6 +10,7 @@ import { MaterialModule } from './materials/materials.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FailDialogComponent } from './core-component/fail-dialog/fail-dialog.component'
 import { HttpClientModule} from '@angular/common/http';
+import { SuccessDialogComponent } from './core-component/success-dialog/success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HttpClientModule} from '@angular/common/http';
     LoginComponent,
     RegistrationComponent,
     FailDialogComponent,
+    SuccessDialogComponent,
   ],
   imports: [
     BrowserModule,
