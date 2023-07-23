@@ -12,6 +12,8 @@ import { DownloadDialogComponent } from './download-dialog/download-dialog.compo
 import { RatingComponent } from './rating/rating.component';
 import { AddCategoryButtonComponent } from '../core-component/add-category-button/add-category-button.component';
 import { AddPluginButtonComponent } from '../core-component/add-plugin-button/add-plugin-button.component';
+import { AddCategoryDialogComponent } from '../core-component/add-category-dialog/add-category-dialog.component';
+import { AddPluginDialogComponent } from '../core-component/add-plugin-dialog/add-plugin-dialog.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AddPluginButtonComponent } from '../core-component/add-plugin-button/ad
     DownloadDialogComponent,
     RatingComponent,
     AddCategoryButtonComponent,
-    AddPluginButtonComponent
+    AddPluginButtonComponent,
+    AddCategoryDialogComponent,
+    AddPluginDialogComponent
   ],
   imports: [
     CommonModule,

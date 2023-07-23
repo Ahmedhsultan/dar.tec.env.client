@@ -1,0 +1,37 @@
+/* Styles for the Add Category dialog component */
+
+/* Center the dialog content vertically and horizontally */
+mat-dialog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Style the input field */
+  mat-form-field {
+    width: 100%;
+  }
+  
+  /* Center the dialog actions (buttons) */
+  mat-dialog-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add some space between the buttons */
+  mat-dialog-actions button {
+    margin: 0 8px;
+  }
+  
+  /* Add some space between the buttons and the form field */
+  mat-dialog-actions button:first-child {
+    margin-left: 0;
+  }
+  
+  /* Add some space between the buttons and the form field */
+  mat-dialog-actions button:last-child {
+    margin-right: 0;
+  }
+  
