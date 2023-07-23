@@ -1,0 +1,27 @@
+/* Add styles for the bottom icons */
+.bottom-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%; /* Position the icons in the middle horizontally */
+    transform: translateX(-50%); /* Center the icons horizontally */
+    display: flex;
+  }
+  
+  .bottom-icon-button {
+    margin: 0 5px; /* Add some spacing between the icons */
+    background-color: var(--main-color); /* Set your desired background color */
+    color: white; /* Set the icon color to white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adjust the size of the bottom icons */
+  .bottom-icon-button mat-icon {
+    font-size: 24px; /* Adjust the font size of the icons */
+  }
+  
+  /* Add hover effect for the bottom icons */
+  .bottom-icon-button:hover {
+    background-color: var(--secondary-color); /* Setting the background color on hover */
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

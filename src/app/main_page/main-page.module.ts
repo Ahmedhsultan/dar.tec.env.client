@@ -10,7 +10,8 @@ import { PluginPageComponent } from './plugin-page/plugin-page.component';
 import { MaterialModule } from '../materials/materials.module';
 import { DownloadDialogComponent } from './download-dialog/download-dialog.component';
 import { RatingComponent } from './rating/rating.component';
-
+import { AddCategoryButtonComponent } from '../core-component/add-category-button/add-category-button.component';
+import { AddPluginButtonComponent } from '../core-component/add-plugin-button/add-plugin-button.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { RatingComponent } from './rating/rating.component';
     PluginListComponent,
     PluginPageComponent,
     DownloadDialogComponent,
-    RatingComponent
+    RatingComponent,
+    AddCategoryButtonComponent,
+    AddPluginButtonComponent
   ],
   imports: [
     CommonModule,
     MainPageRoutingModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [MainPageComponent]

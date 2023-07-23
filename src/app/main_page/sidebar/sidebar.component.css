@@ -160,3 +160,14 @@
   height: 100vh;
   position: fixed;
 }
+
+/* Existing styles */
+
+/* Add styles for the bottom icons */
+.bottom-icons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%; /* Position the icons in the middle horizontally */
+  transform: translateX(-50%); /* Center the icons horizontally */
+  display: flex;
+}
