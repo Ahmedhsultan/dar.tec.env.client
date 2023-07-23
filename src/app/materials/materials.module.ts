@@ -22,7 +22,7 @@ const materials =[
   MatOptionModule,
   MatSelectModule,
   MatToolbarModule,
-  MatDialogModule
+  MatDialogModule,
 ]
 @NgModule({
   imports: [materials],

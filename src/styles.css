@@ -3,6 +3,7 @@
 :root {
     --main-color: #32DAC4;
     --secondary-color: #32dac452;
+    --warn-color: #ff9595;
     --darkgray: #404040;
     --lightgray: #66666694;
     --tableHeaderColor: hsla(204, 17%, 94%, 0.815);
