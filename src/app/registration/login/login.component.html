@@ -6,8 +6,8 @@
                 <p class="message">Tec Environment</p>
                 <div class="flex">
                     <label>
-                        <input required="" formControlName="username" placeholder="" type="text" class="input">
-                        <span>username</span>
+                        <input required="" formControlName="email" placeholder="" type="email" class="input">
+                        <span>E-Mail</span>
                     </label>
 
                     <label>
@@ -17,7 +17,7 @@
                 </div>
 
                 <button [disabled]="form.invalid" mat-flat-button color="primary" class="custombutton" (click)="login()">Login</button>
-                <p class="signin">Create a new account: <a href="registration">Register</a> </p>
+                <p class="signin">Create a new account: <a routerLink="/registration">Register</a> </p>
             </form>
         </mat-card-content>
     </mat-card>
