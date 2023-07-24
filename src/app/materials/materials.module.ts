@@ -10,6 +10,7 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const materials =[
   MatButtonModule,
@@ -23,6 +24,7 @@ const materials =[
   MatSelectModule,
   MatToolbarModule,
   MatDialogModule,
+  ReactiveFormsModule
 ]
 @NgModule({
   imports: [materials],

@@ -1,1 +1,37 @@
-<p>add-plugin-dialog works!</p>
+<h2 mat-dialog-title>Add Plugin</h2>
+<mat-dialog-content [formGroup]="pluginForm">
+  <!-- Plugin Name Input -->
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Plugin Name</mat-label>
+      <input matInput formControlName="pluginName" placeholder="Enter Plugin Name" />
+    </mat-form-field>
+  </div>
+
+  <!-- Description Input -->
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" placeholder="Enter Description" rows="4"></textarea>
+    </mat-form-field>
+  </div>
+
+  <!-- Link Input -->
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Link</mat-label>
+      <input matInput formControlName="link" placeholder="Enter Link" />
+    </mat-form-field>
+  </div>
+
+  <!-- Upload Button and Label -->
+  <div class="upload-container">
+    <button class="upload-button" (click)="fileInput.click()">Choose File</button>
+    <label class="upload-label" for="fileInput">Upload Video</label>
+    <input type="file" accept="video/*" style="display: none" #fileInput (change)="onUploadFile($event)" />
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close color="warn">Cancel</button>
+  <button mat-button (click)="onAddPlugin()" color="primary">Add</button>
+</mat-dialog-actions>
