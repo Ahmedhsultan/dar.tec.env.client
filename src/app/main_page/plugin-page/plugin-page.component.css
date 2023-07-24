@@ -1,5 +1,6 @@
 .product-card {
   flex-direction: row;
+  max-height: 170px;
   display: flex;
   width: 100%;
   margin-top: 20px;
@@ -19,7 +20,7 @@
 .image-container img {
   width: 200px;
   height: 150px;
-  margin: 10px;
+  max-height: 150px;
 }
 
 .content-container {
@@ -63,7 +64,7 @@ h2 {
 .button_width{
   margin: 10px;
   width: 100%;
-  color: white;
+  color: white !important;
 }
 
 .button {
@@ -71,7 +72,7 @@ h2 {
   border-radius: 7px;
   border: none;
   background: #1875FF;
-  color: white;
+  color: white !important;
   font-family: inherit;
   text-align: center;
   font-size: 13px;
@@ -106,3 +107,16 @@ h2 {
   opacity: 4;
   right: 0;
  }
+
+ /* plugin-list.component.css */
+.description-content {
+  max-height: 4.8em; /* Adjust this value to show 4 lines of text */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Set the maximum number of lines */
+  -webkit-box-orient: vertical;
+}
+
+.name-content{
+  -webkit-line-clamp: 1;
+}

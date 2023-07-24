@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environment/environment';
 
@@ -9,10 +9,10 @@ export class ServerService {
   urlServer:String = environment.serverUrl;
   constructor(private http:HttpClient) { }
 
-  get(url:String):any {
-    return this.http.get(this.urlServer + '' + url);
+  get<T>(url:String):any {
+    return this.http.get<T>(this.urlServer + '' + url);
   }
-  post(url:String, body:any):any {
-    return this.http.post(this.urlServer + '' + url, body);
+  post<T>(url:String, body:any, headers?:HttpHeaders):any {
+    return this.http.post<T>(this.urlServer + '' + url, body, {headers});
   }
 }

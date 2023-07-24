@@ -1,0 +1,8 @@
+<table class="vertical-table">
+    <tr *ngFor="let category of categories" routerLinkActive="active">
+        <button class="custom-button" mat-button color="Basic" (click)="onClick(category.name)">
+            <mat-icon custom-mat-icon>{{ category.icon }}</mat-icon>
+            {{ category.name }}
+        </button>
+    </tr>
+</table>

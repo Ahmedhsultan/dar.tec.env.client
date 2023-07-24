@@ -1,52 +1,35 @@
 <mat-drawer-container class="custom_container">
   <!-- Main content -->
   <mat-drawer mode="side" opened="{{isSidebarOpen}}" class="sidebar">
-    <!-- Parent items -->
+    <!-- Logo -->
     <div class="logo">
-      <img src="../../../favicon.ico" alt="Logo" (click)="onLogoClick()"/>
+      <img src="../../../favicon.ico" alt="Logo" (click)="onLogoClick()" />
     </div>
+    <!-- Category list -->
     <ul class="nav">
       <span class="nav-title">Tec Environment</span>
-      <table class="vertical-table">
-        <tr routerLinkActive="active">
-          <button class="custom-button" mat-button color="Basic">
-            <mat-icon custom-mat-icon>build</mat-icon>Cogopoint
-          </button>
-        </tr>
-        <tr routerLinkActive="active">
-          <button class="custom-button" mat-button color="Basic">
-            <mat-icon custom-mat-icon>build</mat-icon>Alignment
-          </button>
-        </tr>
-        <tr routerLinkActive="active">
-          <button class="custom-button" mat-button color="Basic">
-            <mat-icon custom-mat-icon>build</mat-icon>Corridor
-          </button>
-        </tr>
-      </table>
+      <app-category-list></app-category-list>
     </ul>
 
-   <!-- New icons at the bottom -->
-<div class="bottom-icons">
-  <!-- Use the new AddCategoryButtonComponent -->
-  <app-add-category-button></app-add-category-button>
-
-  <!-- Use the new AddPluginButtonComponent -->
-  <app-add-plugin-button></app-add-plugin-button>
-</div>
-
+    <!-- add icons at the bottom -->
+    <div class="bottom-icons">
+      <app-add-category-button></app-add-category-button>
+      <app-add-plugin-button></app-add-plugin-button>
+    </div>
   </mat-drawer>
-  
+
   <!-- Main content area -->
   <mat-drawer-content>
     <div class="cont">
       <app-navbar></app-navbar>
 
       <router-outlet></router-outlet>
+
       <app-plugin-page></app-plugin-page>
       <!-- <app-plugin-list></app-plugin-list> -->
     </div>
 
+    <!-- Side nav controller button -->
     <div class="floating-button-container">
       <button mat-fab class="floating-button" (click)="toggleSidebar()">
         <mat-icon>{{ isSidebarOpen ? 'chevron_left' : 'chevron_right' }}</mat-icon>

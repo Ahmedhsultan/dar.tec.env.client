@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Input, Component, Output, EventEmitter } from '@angular/core';
+import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
@@ -11,7 +11,7 @@ import { ServerService } from 'src/app/service/server.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
   form: FormGroup = new FormGroup({});
 
   constructor(private router: Router, private formBuilder: FormBuilder,

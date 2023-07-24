@@ -8,6 +8,18 @@
     </mat-form-field>
   </div>
 
+  <!-- Category Dropdown -->
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="categoryName">
+        <mat-option *ngFor="let category of categories" [value]="category.name">
+          {{ category.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
   <!-- Description Input -->
   <div class="input-container">
     <mat-form-field>
@@ -20,7 +32,7 @@
   <div class="input-container">
     <mat-form-field>
       <mat-label>Link</mat-label>
-      <input matInput formControlName="link" placeholder="Enter Link" />
+      <input matInput formControlName="excutedcodeURL" placeholder="Enter Link" />
     </mat-form-field>
   </div>
 
@@ -32,6 +44,6 @@
   </div>
 </mat-dialog-content>
 <mat-dialog-actions>
-  <button mat-button mat-dialog-close color="warn">Cancel</button>
-  <button mat-button (click)="onAddPlugin()" color="primary">Add</button>
+  <button mat-button mat-dialog-close color="warn" [disabled]="isButtonsDisabled">Cancel</button>
+  <button mat-button (click)="onAddPlugin()" color="primary" [disabled]="isButtonsDisabled || !pluginForm.valid">Add</button>
 </mat-dialog-actions>

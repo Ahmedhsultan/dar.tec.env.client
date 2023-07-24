@@ -1,23 +1,29 @@
-<mat-card class="product-card">
-  <!-- Left side: Image -->
-  <div class="image-container">
-    <img src="../../../favicon.ico" alt="Product Image">
-  </div>
+<ng-container *ngFor="let plugin of plugins">
+  <mat-card class="product-card">
+    <!-- Left side: Image -->
+    <div class="image-container">
+      <!-- <img [src]="plugin.image" alt="Plugin Image"> -->
+      <img src="../../../favicon.ico" alt="Plugin Image">
+    </div>
 
-  <!-- Middle: Content -->
-  <div class="content-container">
-    <mat-card-content>
-      <!-- Add your product details and description here -->
-      <h2>Product Name</h2>
-      <p>Product Description</p>
-    </mat-card-content>
-  </div>
+    <!-- Middle: Content -->
+    <div class="content-container">
+      <mat-card-content>
+        <!-- Add your plugin details and description here -->
+        <h2 class="name-content">{{ plugin.name }}</h2>
+        <p class="description-content">{{ plugin.script.description }}</p>
+      </mat-card-content>
+    </div>
 
-  <!-- Right side: Buttons -->
-  <div class="button-container">
-    <button mat-raised-button class="button_width open-button" color="primary" style="vertical-align:middle"><span>Open</span></button>
-    <button mat-raised-button class="button_width" color="accent">
-      <mat-icon>favorite</mat-icon> Add to Wishlist
-    </button>
-  </div>
-</mat-card>
+    <!-- Right side: Buttons -->
+    <div class="button-container">
+      <button mat-raised-button class="button_width open-button" color="primary" style="vertical-align:middle"
+        (click)="openPlugin(plugin.name)">
+        <span>Open</span>
+      </button>
+      <button mat-raised-button class="button_width" color="accent">
+        <mat-icon>favorite</mat-icon> Add to Wishlist
+      </button>
+    </div>
+  </mat-card>
+</ng-container>

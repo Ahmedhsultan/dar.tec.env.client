@@ -1,0 +1,41 @@
+.active {
+    background-color: var(--main-color);
+}
+
+.vertical-table {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styles for the custom button */
+.custom-button {
+    margin-top: 5px;
+    /* Align the text inside the button to the left */
+    padding-left: 20px;
+    /* Add left padding to create some space between the icon and the text */
+    width: 100%;
+    /* Set the width of the button to 100% */
+    font-size: 17px;
+    color: var(--lightgray) !important;
+    /* Important to override Angular Material's styles */
+    display: flex;
+    /* Center the content vertically */
+    justify-content: flex-start;
+    /* Align the content to the left */
+    font-weight: 500;
+}
+
+/* Add hover effect for the custom button */
+.custom-button:hover {
+    background-color: var(--secondary-color);
+    /* Setting the background color on hover */
+    transform: translateY(-2%) scale(1.1);
+    /* Add a slight scale effect on hover */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    color: white !important;
+}
+
+.tr {
+    padding: 10px;
+}

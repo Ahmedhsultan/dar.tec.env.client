@@ -14,6 +14,7 @@ import { AddCategoryButtonComponent } from '../core-component/add-category-butto
 import { AddPluginButtonComponent } from '../core-component/add-plugin-button/add-plugin-button.component';
 import { AddCategoryDialogComponent } from '../core-component/add-category-dialog/add-category-dialog.component';
 import { AddPluginDialogComponent } from '../core-component/add-plugin-dialog/add-plugin-dialog.component';
+import { CategoryListComponent } from '../core-component/category-list/category-list.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AddPluginDialogComponent } from '../core-component/add-plugin-dialog/ad
     AddCategoryButtonComponent,
     AddPluginButtonComponent,
     AddCategoryDialogComponent,
-    AddPluginDialogComponent
+    AddPluginDialogComponent,
+    CategoryListComponent
   ],
   imports: [
     CommonModule,

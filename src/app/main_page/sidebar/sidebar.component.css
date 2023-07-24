@@ -34,27 +34,35 @@
   padding: 0;
 }
 
-.nav tr {
-  padding: 10px;
-}
-
-.nav tr a {
-  padding: 10px; 
-  margin-left: 30px;
-  margin-right:30px;
-  word-wrap: break-word;
+/* Styles for the custom button */
+.custom-button {
+  margin-top: 5px;
+  text-align: left;
+  /* Align the text inside the button to the left */
+  padding-left: 20px;
+  /* Add left padding to create some space between the icon and the text */
+  width: 100%;
+  /* Set the width of the button to 100% */
+  font-size: 17px;
+  color: var(--lightgray) !important;
+  /* Important to override Angular Material's styles */
   display: flex;
+  /* Make the button a flex container */
   align-items: center;
-  text-decoration: none;
-  color: var(--lightgray); /* Gray color for inactive items */
-  font-weight: 480;
-  width: 100%; /* Make the text wider */
-  font-size: 18px; /* Increase font size */
-  text-align: center; /* Center the text */
+  /* Center the content vertically */
+  justify-content: flex-start;
+  /* Align the content to the left */
+  font-weight: 500;
 }
 
-.nav tr a:hover {
-  color: var(--main-color);
+/* Add hover effect for the custom button */
+.custom-button:hover {
+  background-color: var(--secondary-color);
+  /* Setting the background color on hover */
+  transform: translateY(-2%) scale(1.1);
+  /* Add a slight scale effect on hover */
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  color: white !important;
 }
 
 .mat-icon {
@@ -80,39 +88,6 @@
 
 .sub-items.show {
   max-height: 200px; /* Adjust the value based on your sub-items height */
-}
-
-.active {
-  background-color: var(--main-color);
-}
-
-.vertical-table {
-  width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* Styles for the custom button */
-.custom-button {
-  margin-top: 5px;
-  text-align: left; /* Align the text inside the button to the left */
-  padding-left: 20px; /* Add left padding to create some space between the icon and the text */
-  width: 100%; /* Set the width of the button to 100% */
-  font-size: 17px;
-  color: var(--lightgray) !important; /* Important to override Angular Material's styles */
-  display: flex; /* Make the button a flex container */
-  align-items: center; /* Center the content vertically */
-  justify-content: flex-start; /* Align the content to the left */
-  font-weight: 500;
-}
-
-/* Add hover effect for the custom button */
-.custom-button:hover {
-  background-color: var(--secondary-color); /* Setting the background color on hover */
-  transform: translateY(-2%) scale(1.1); /* Add a slight scale effect on hover */
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  color: white !important;
-  
 }
 
 /* Adjust the icon size and spacing */
